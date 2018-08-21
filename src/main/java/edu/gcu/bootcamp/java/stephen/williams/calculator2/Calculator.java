@@ -15,8 +15,8 @@ public class Calculator {
 		num2 = getUserInput();
 		
 //		int resultOfCalculation = add(num1, num2);
-		
-		int resultOfCalculation = subtract(num1, num2);
+//		int resultOfCalculation = subtract(num1, num2);
+		int resultOfCalculation = multiply(num1, num2);
 		
 		displayResult(resultOfCalculation);
 		
@@ -35,15 +35,22 @@ public class Calculator {
 		return sum;
 	}
 	
-	private static void displayResult(int result) {
-		
-		System.out.println("The difference between the two numbers is " + result);
-	}
-	
 	private static int subtract(int num1, int num2) {
 		
 		int difference = num1 - num2;
 		return difference;
+	}
+	
+	private static int multiply(int num1, int num2) {
+		
+		int multiply = num1 * num2;
+		return multiply;
+	}
+	
+	
+	private static void displayResult(int result) {
+		
+		System.out.println("The result is " + result);
 	}
 	
 }
